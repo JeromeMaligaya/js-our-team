@@ -11,25 +11,36 @@ body{
 }
 
 img{
-    width: 200px;
+    width: 150px;
 }
 
 #gridTeam{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 #gridTeam li{
-    flex-basis: calc((100% / 3) - (40px / 2));
+    max-width: 300px;
+    display: flex;  
 }
 
 /*layout*/
 .container{
-    max-width: 1200px;
+    width: 1200px;
     margin: 125px auto;
 }
 
 
 /* grid team */
+
+#gridTeam li .side-card{
+    padding: 15px 0 0 15px;
+    background-color: cadetblue;
+    
+}
+
+p{
+    color: aliceblue;
+}
