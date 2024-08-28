@@ -11,19 +11,25 @@ body{
 }
 
 img{
-    width: 100%;
-    display: block;
+    width: 200px;
 }
 
-ul{
+#gridTeam{
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#gridTeam li{
+    flex-basis: calc((100% / 3) - (40px / 2));
 }
 
 /*layout*/
 .container{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 125px auto;
 }
 
 
-/*utilities*/
+/* grid team */
