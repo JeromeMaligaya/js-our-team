@@ -14,6 +14,21 @@ const team = [
 ]
 console.table(team)    
 // 3.lavorazione dati
+// giro dentro all'array team
+let listItems = '';
+for(member of team){
+    listItems += `
+    <li>
+        <img src="img/${member.imgMember}" alt="${member.fullName}">
+        <div class="side-card">
+            <h3>${member.fullName}</h3>
+            <p>${member.job}</p>
+        </div>
+    </li>
+    `
+}
+console.log(listItems)
 
     
 // 4.generazione output
+gridIndex.innerHTML = listItems;
