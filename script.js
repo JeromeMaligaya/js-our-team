@@ -30,5 +30,5 @@ for(member of team){
 console.log(listItems)
 
     
-// 4.generazione output
+// 4.generazione output 
 gridIndex.innerHTML = listItems;
